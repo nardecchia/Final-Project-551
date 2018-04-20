@@ -8,7 +8,7 @@ output reg [25:0] acc; // output
 wire [25:0] mult_ext, acc_nxt, add; 
 wire [15:0] mult;
 
-assign mult = in1 * in2;
+assign mult = in1 * in2; //multiply
 
 assign mult_ext = {{10{mult[15]}}, mult[15:0]}; // sign-extend
 
